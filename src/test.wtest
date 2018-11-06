@@ -1,0 +1,12 @@
+
+import example.*
+
+test "tira Error" {
+	assert.throwsException({ foo.doFoo() })
+
+}
+
+test "tira Error Con mensaje ..." {
+	assert.throwsExceptionWithMessage("Un Error", {foo.doFoo()})
+
+}
